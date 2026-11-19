@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.streamlit/secrets.toml
+data/uploads/*
+!data/uploads/sample_venue_brief.pdf
+!data/uploads/sample_catering_menu.pdf
+!data/uploads/sample_decoration_guide.pdf
+data/chroma/
+data/*.db
+data/*.sqlite3
+.pytest_cache/
+.ruff_cache/
