@@ -1,0 +1,30 @@
+services:
+  api:
+    build: .
+    command: ["uvicorn", "app.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    environment:
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      OLLAMA_MODEL: qwen3:4b
+      OLLAMA_EMBEDDING_MODEL: nomic-embed-text:latest
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+  frontend:
+    build: .
+    command: ["streamlit", "run", "app/main.py", "--server.address=0.0.0.0", "--server.port=8501"]
+    environment:
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      OLLAMA_MODEL: qwen3:4b
+      OLLAMA_EMBEDDING_MODEL: nomic-embed-text:latest
+      API_BASE_URL: http://api:8000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8502:8501"
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - api

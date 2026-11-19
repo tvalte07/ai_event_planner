@@ -13,3 +13,4 @@ data/*.db
 data/*.sqlite3
 .pytest_cache/
 .ruff_cache/
+.idea/

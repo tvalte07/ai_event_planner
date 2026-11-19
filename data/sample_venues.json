@@ -1,0 +1,42 @@
+[
+  {
+    "category": "Community hall",
+    "capacity_min": 15,
+    "capacity_max": 180,
+    "event_types": ["Birthday party", "Wedding", "Corporate event", "Team outing", "Anniversary", "Family function", "College event"],
+    "reason": "A flexible indoor category to investigate for a mid-sized gathering.",
+    "selection_checks": ["Ask about included tables, chairs, and basic lighting.", "Confirm permitted event hours and cleanup responsibilities.", "Check accessibility, parking, and any outside-catering rules."]
+  },
+  {
+    "category": "Restaurant private dining room",
+    "capacity_min": 8,
+    "capacity_max": 70,
+    "event_types": ["Birthday party", "Corporate event", "Anniversary", "Family function"],
+    "reason": "A compact option to explore when a meal and hosted seating are priorities.",
+    "selection_checks": ["Ask whether the space is private and whether there is a minimum spend.", "Confirm menu options for dietary needs.", "Check sound limits and the length of the reservation."]
+  },
+  {
+    "category": "Outdoor garden or lawn",
+    "capacity_min": 25,
+    "capacity_max": 350,
+    "event_types": ["Birthday party", "Wedding", "Team outing", "Anniversary", "Family function", "College event"],
+    "reason": "An open-air category to consider for events with outdoor activities or flexible layouts.",
+    "selection_checks": ["Ask about a rain backup and weather cancellation terms.", "Confirm power, washroom, lighting, and sound arrangements.", "Check setup time and any restrictions on decorations."]
+  },
+  {
+    "category": "Hotel banquet room",
+    "capacity_min": 30,
+    "capacity_max": 400,
+    "event_types": ["Wedding", "Corporate event", "Anniversary", "Family function"],
+    "reason": "A staffed indoor category to investigate for a formal program or larger guest list.",
+    "selection_checks": ["Request an itemized quote and clarify taxes and service charges.", "Confirm the room layout, included equipment, and meal options.", "Ask about event timing, accessibility, and cancellation terms."]
+  },
+  {
+    "category": "College or community auditorium",
+    "capacity_min": 60,
+    "capacity_max": 900,
+    "event_types": ["Corporate event", "College event"],
+    "reason": "A seating-focused category to explore for talks, performances, or presentations.",
+    "selection_checks": ["Confirm stage, microphones, projection, and technical support.", "Ask about rehearsal and setup access.", "Check audience capacity, exits, and accessible seating."]
+  }
+]
